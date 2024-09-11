@@ -1,0 +1,113 @@
+html {
+    background-color: black;
+    backdrop-filter: blur(1.20rem);
+    height: 100%;
+}
+
+body {
+    align-content: end;
+    justify-content: end;
+    display: flex;
+    margin: 0;
+    height: 100%;
+}
+
+div.ss-grid {
+    column-count: 12;
+    column-span: all;
+    display: grid;
+    width: 40%;
+    height: 100%;
+}
+
+div.row {
+    width: 90%;
+    margin: 5%;
+}
+
+label {
+    width: 100%;
+    color: whitesmoke;
+    font-size: larger;
+}
+
+input {
+    margin-top: 1%;
+    width: 100%;
+    height: 30px;
+}
+
+input:hover {
+    margin-top: 1%;
+    width: 100%;
+    height: 30px;
+    background-color: #e8dede;
+    animation-name: input;
+    animation-duration: 1s;
+}
+
+.form {
+    width: 25%;
+    background-color: #44495d;
+    backdrop-filter: blur(1.2rem);
+}
+
+.tittle {
+    width: 100%;
+    align-content: center;
+    text-align-last: center;
+    color: ghostwhite;
+    font-family: "Century Gothic";
+    font-size: larger;
+}
+
+.form {
+}
+
+input.input-button {
+    height: 55px;
+    background-color: #00cc00;
+    color: black;
+    animation-duration: 2s;
+    animation-name: botao_inicial;
+}
+
+input.input-button:hover {
+    height: 55px;
+    background-color: #151715;
+    color: #00cc00;
+    animation-duration: 2s;
+    animation-name: botao;
+}
+
+@keyframes botao {
+    from {
+        background-color: #00cc00;
+        color: black;
+    }
+    to {
+        background-color: black;
+        color: #00cc00;
+    }
+}
+
+@keyframes botao_inicial {
+    from {
+        background-color: black;
+        color: #00cc00;
+    }
+    to {
+        background-color: #00cc00;
+        color: black;
+    }
+}
+
+@keyframes input {
+    from {
+        background-color: #ffffff;
+
+    }
+    to {
+        background-color: #e8dede;
+    }
+}
