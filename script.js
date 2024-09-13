@@ -3,5 +3,4 @@ function teste() {
 }
 
 function abrir(){
-    window.location.replace('https://xvideos.com/')
 }

@@ -1,113 +1,71 @@
 html {
-    background-color: black;
-    backdrop-filter: blur(1.20rem);
-    height: 100%;
+    /*height: 100%;*/
+    /*width: 100%;*/
+    background-color: beige;
 }
 
 body {
-    align-content: end;
-    justify-content: end;
-    display: flex;
+    height: 100%;
+    width: 100%;
     margin: 0;
-    height: 100%;
 }
 
-div.ss-grid {
-    column-count: 12;
-    column-span: all;
+div.container {
     display: grid;
-    width: 40%;
+    width: 100%;
     height: 100%;
+
 }
 
-div.row {
-    width: 90%;
-    margin: 5%;
-}
-
-label {
-    width: 100%;
-    color: whitesmoke;
-    font-size: larger;
-}
-
-input {
-    margin-top: 1%;
-    width: 100%;
-    height: 30px;
-}
-
-input:hover {
-    margin-top: 1%;
-    width: 100%;
-    height: 30px;
-    background-color: #e8dede;
-    animation-name: input;
+div.header {
+    min-height: 100px;
+    background-color: #000000;
+    align-content: center;
+    animation-name: headerAnimation;
     animation-duration: 1s;
 }
 
-.form {
-    width: 25%;
-    background-color: #44495d;
-    backdrop-filter: blur(1.2rem);
+div.tittle{
+    margin: 20px 0 3px 20px;
+    font-size: 25px;
+    color: whitesmoke;
+    width: 50%;
+    animation-name: titleAnimation;
+    animation-duration: 1.5s;
+}
+div.subtitle {
+    color: lightgray;
+    animation-duration: 2.5s;
+    animation-name: subtitleAnimation;
 }
 
-.tittle {
-    width: 100%;
-    align-content: center;
-    text-align-last: center;
-    color: ghostwhite;
-    font-family: "Century Gothic";
-    font-size: larger;
-}
+/* ANIMACOES */
 
-.form {
-}
-
-input.input-button {
-    height: 55px;
-    background-color: #00cc00;
-    color: black;
-    animation-duration: 2s;
-    animation-name: botao_inicial;
-}
-
-input.input-button:hover {
-    height: 55px;
-    background-color: #151715;
-    color: #00cc00;
-    animation-duration: 2s;
-    animation-name: botao;
-}
-
-@keyframes botao {
+@keyframes titleAnimation {
     from {
-        background-color: #00cc00;
-        color: black;
+        margin-left: -600px;
+        font-size: 1px;
     }
     to {
-        background-color: black;
-        color: #00cc00;
+        font-size: 25px;
+        margin-left: 20px;
     }
 }
-
-@keyframes botao_inicial {
+@keyframes subtitleAnimation {
     from {
-        background-color: black;
-        color: #00cc00;
+        margin-left: -600px;
+        font-size: 1px;
     }
     to {
-        background-color: #00cc00;
-        color: black;
+        font-size: 25px;
     }
 }
 
-@keyframes input {
+@keyframes headerAnimation {
     from {
         background-color: #ffffff;
-
     }
     to {
-        background-color: #e8dede;
+        background-color: #000000;
     }
 }
